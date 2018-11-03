@@ -17,7 +17,7 @@ services:
     env_file:
       - localapi.env
     volumes:
-      - cpan:/CPAN
+      - /home/tom/git/regentmarkets/cpan/vendor/cache:/CPAN
       - api_carton:/carton
       - ./src/metacpan-api:/metacpan-api
       - ./configs/metacpan-api/metacpan_server.conf:/metacpan-api/metacpan_server.conf
