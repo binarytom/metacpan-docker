@@ -30,7 +30,7 @@ services:
       - elasticsearch
       - web
   elasticsearch:
-    image: elasticsearch:2.4
+    image: elasticsearch:2.4-alpine
     volumes:
       - elasticsearch:/usr/share/elasticsearch/data
       - ./elasticsearch/metacpan.yml:/usr/share/elasticsearch/config/metacpan.yml
@@ -40,7 +40,7 @@ services:
     networks:
       - elasticsearch
   elasticsearch_test:
-    image: elasticsearch:2.4
+    image: elasticsearch:2.4-alpine
     volumes:
       - elasticsearch_test:/usr/share/elasticsearch/data
       - ./elasticsearch/test.yml:/usr/share/elasticsearch/config/test.yml
