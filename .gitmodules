@@ -1,0 +1,8 @@
+[submodule "src/metacpan-api"]
+	path = src/metacpan-api
+	url = git@github.com:binarytom/metacpan-api
+	branch = tom/metacpan_docker
+[submodule "src/metacpan-web"]
+	path = src/metacpan-web
+	url = git@github.com:binarytom/metacpan-web
+	branch = tom/metacpan_docker
